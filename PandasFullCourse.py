@@ -20,3 +20,14 @@ print(result)
 data = {"Marks": [1,2,45,65],"Name": ["Ali","Hassan","Akram","Faizan"]}
 result  = pd.DataFrame(data)
 print(result)
+#Show Particular Row using (loc)
+data = {"Marks": [1,2,45,65],"Name": ["Ali","Hassan","Akram","Faizan"]}
+result  = pd.DataFrame(data)
+print(result.loc[0]) # it gives back output in series
+print(result.loc[[0,1]]) # it gives back output in Table
+#name indexes
+data = {"Marks": [1,2,45,65],"Name": ["Ali","Hassan","Akram","Faizan"]}
+result  = pd.DataFrame(data,["Msc","Bsc","Matric","12th"])
+print(result)
+print(result.loc[["Matric","Bsc"]])
+ 
