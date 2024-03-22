@@ -38,3 +38,7 @@ print(pd.options.display.max_rows) # Show Capability to show max rows
 pd.options.display.max_rows = 9999
 print(pd.options.display.max_rows) # Show Capability to show max rows
 print(df)
+#5th Class Read From Json
+df = pd.read_json("D:\TNX\Worksjop\Pandas\dataSet.js")
+print(df.to_string())
+print(df) # it show only first and end 5
